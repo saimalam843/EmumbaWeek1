@@ -2,12 +2,19 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Emumba</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="emumba.jpg">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -63,70 +70,109 @@
 
     <h2>Job Opportunities</h2>
     <div class="jobs">
-       <table class="jobs-table">
-        <tr class="jobs-header-row">
-            <th>Job Title</th>
-            <th>Location</th>
-            <th>Salary</th>
-            <th>Posted On</th>
-        </tr>
-        <tr class="jobs-data-row">
-            <td>Frontend Developer</td>
-            <td>Islamabad, Pakistan</td>
-            <td>Rs. 175,000</td>
-            <td>June 27, 2024</td> 
-        </tr>
-        <tr class="jobs-data-row">
-            <td>Backend Developer</td>
-            <td>Remote</td>
-            <td>Rs. 155,000</td>
-            <td>June 24, 2024</td> 
-        </tr>
-        <tr class="jobs-data-row">
-            <td>Data Scientist</td>
-            <td>Islamabad, Pakistan</td>
-            <td>Rs. 185,000</td>
-            <td>June 26, 2024</td> 
-        </tr>
-        <tr class="jobs-data-row">
-            <td>Full Stack Developer</td>
-            <td>Islamabad, Pakistan</td>
-            <td>Rs. 205,000</td>
-            <td>June 27, 2024</td> 
-        </tr>
-       </table>
+        <!-- Job Cards for Mobile and Tablet -->
+        <div class="job-card">
+            <div class="job-info">
+                <div class="job-salary">Rs. 175,000</div>
+                <div class="job-title">Frontend Developer</div>
+                <div class="job-location">Islamabad, Pakistan</div>
+                <div class="job-posted">Posted on June 27, 2024</div>
+            </div>
+        </div>
+        <div class="job-card">
+            <div class="job-info">
+                <div class="job-salary">Rs. 155,000</div>
+                <div class="job-title">Backend Developer</div>
+                <div class="job-location">Remote</div>
+                <div class="job-posted">Posted on June 24, 2024</div>
+            </div>
+        </div>
+        <div class="job-card">
+            <div class="job-info">
+                <div class="job-salary">Rs. 185,000</div>
+                <div class="job-title">Data Scientist</div>
+                <div class="job-location">Islamabad, Pakistan</div>
+                <div class="job-posted">Posted on June 26, 2024</div>
+            </div>
+        </div>
+        <div class="job-card">
+            <div class="job-info">
+                <div class="job-salary">Rs. 205,000</div>
+                <div class="job-title">Full Stack Developer</div>
+                <div class="job-location">Islamabad, Pakistan</div>
+                <div class="job-posted">Posted on June 27, 2024</div>
+            </div>
+        </div>
+
+
+
+
+        <!--for PCs and larger screens-->
+        <table class="jobs-table">
+            <tr class="jobs-header-row">
+                <th>Job Title</th>
+                <th>Location</th>
+                <th>Salary</th>
+                <th>Posted On</th>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Frontend Developer</td>
+                <td>Islamabad, Pakistan</td>
+                <td>Rs. 175,000</td>
+                <td>June 27, 2024</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Backend Developer</td>
+                <td>Remote</td>
+                <td>Rs. 155,000</td>
+                <td>June 24, 2024</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Data Scientist</td>
+                <td>Islamabad, Pakistan</td>
+                <td>Rs. 185,000</td>
+                <td>June 26, 2024</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Full Stack Developer</td>
+                <td>Islamabad, Pakistan</td>
+                <td>Rs. 205,000</td>
+                <td>June 27, 2024</td>
+            </tr>
+        </table>
     </div>
 
     <div class="application">
         <h2>Submit Your Application</h2>
-        <form action="https://formbold.com/s/9mxyQ" method="POST" enctype="multipart/form-data" class="application-form">
+        <form action="https://formbold.com/s/9mxyQ" method="POST" enctype="multipart/form-data"
+            class="application-form">
             <div>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
-            </div>
-            
-            <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-            </div>
-            
-            <div>
-            <label for="job">Job Title:</label>
-            <select id="job" name="job" required>
-                <option value="Frontend Developer">Frontend Developer</option>
-                <option value="Backend Developer">Backend Developer</option>
-                <option value="Data Scientist">Data Scientist</option>
-                <option value="Full Stack Developer">Full Stack Developer</option>
-            </select><br>
-            </div>
-            
-            <div>
-            <label for="resume">Resume:</label>
-            <input type="file" id="resume" name="resume" required>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
             </div>
 
             <div>
-            <input type="submit" value="Submit">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+            </div>
+
+            <div>
+                <label for="job">Job Title:</label>
+                <select id="job" name="job" required>
+                    <option value="Frontend Developer">Frontend Developer</option>
+                    <option value="Backend Developer">Backend Developer</option>
+                    <option value="Data Scientist">Data Scientist</option>
+                    <option value="Full Stack Developer">Full Stack Developer</option>
+                </select><br>
+            </div>
+
+            <div>
+                <label for="resume">Resume:</label>
+                <input type="file" id="resume" name="resume" required>
+            </div>
+
+            <div>
+                <input type="submit" value="Submit">
             </div>
         </form>
     </div>
